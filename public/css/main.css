@@ -14,6 +14,13 @@ body {
   color: #ff5e23;
 }
 
+.overlay {
+  background-color: rgba(103, 102, 102, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 .hero {
   height: 100vh;
   background-size: cover;
@@ -21,13 +28,6 @@ body {
   background-image: url("../../public/css/images/background.jpg");
   background-repeat: no-repeat;
   position: relative;
-}
-
-.hero .overlay {
-  background-color: rgba(103, 102, 102, 0.4);
-  width: 100%;
-  height: 100%;
-  position: absolute;
 }
 
 .hero .nav-container {
@@ -117,12 +117,14 @@ body {
   justify-content: center;
   margin: 0.5rem 0;
   animation: moveInLeft 1s ease;
+  user-select: none;
 }
 
 .hero .heading_main {
   font-size: 2rem;
   text-transform: uppercase;
   color: white;
+  user-select: none;
 }
 
 .hero .heading_projects {
@@ -382,5 +384,48 @@ body {
 
 .projects .link:hover {
   color: #ff5e23;
+}
+
+.resume-section {
+  height: 25vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
+
+.resume-section-image {
+  background-image: url("../../public/css/images/resume.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  filter: blur(2px);
+}
+
+.resume-section-image::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.705);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.resume-section-heading {
+  margin: 1rem auto;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.resume-section-link {
+  text-transform: capitalize;
+  padding: 0.8rem 1rem;
+  border: solid 2px #ff5e23;
 }
 /*# sourceMappingURL=main.css.map */
