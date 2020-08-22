@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: -110px -106px;
   background-image: url("../../public/css/images/background.jpg");
-  background-attachment: fixed;
+
   background-repeat: no-repeat;
   position: relative;
   .overlay {
@@ -12,26 +12,63 @@
     height: 100%;
     position: absolute;
   }
-  .nav-list {
-    font-size: 1rem;
-    text-transform: uppercase;
-    width: 450px;
-    margin-top: 0.5rem;
-    position: absolute;
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 15px 0;
+    height: 55px;
+    user-select: none;
+    transition: all 0.4s;
 
-    & li {
-      transition: all 0.2s ease;
-    }
-
-    & li:hover {
-      color: $color-primary;
-      transform: scale(1.1);
-    }
-    .resume-btn {
-      border: 1px solid $color-primary;
-      padding: 0.1rem 0.5rem;
+    .nav-list {
+      font-size: 1rem;
       text-transform: uppercase;
-      border-radius: 2px;
+      min-width: 500px;
+      width: 3%;
+
+      & li {
+        transition: all 0.2s ease;
+      }
+
+      & li:hover {
+        transform: scale(1.1);
+      }
+      .resume-btn {
+        border: 1px solid $color-primary;
+        padding: 0 0.5rem;
+        text-transform: uppercase;
+        border-radius: 2px;
+        background-image: linear-gradient(
+          120deg,
+          transparent 0%,
+          transparent 50%,
+          $color-primary 50%
+        );
+        background-size: 250%;
+        transition: all 0.3s;
+        &:hover {
+          background-position: 100%;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  .fixed-nav {
+    background-color: rgb(22, 22, 22) !important;
+    height: 55px;
+    padding: 15px 0;
+    -webkit-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.61);
+    box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.61);
+    .nav-list li:hover {
+      color: inherit;
+    }
+    .number {
+      color: inherit;
     }
   }
   .heading {
@@ -73,7 +110,29 @@
 .arrow {
   position: absolute;
   top: 95%;
-  left: 50%;
+  left: 49%;
   animation: moveDown 1.5s infinite;
   animation-delay: 3s;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  justify-content: flex-end;
+  padding: 1rem;
+  .social-link {
+    &:hover {
+      color: $color-primary;
+      transform: scale(1.3);
+    }
+  }
+}
+.bubble {
+  position: absolute;
+  z-index: -2;
+  background-color: $color-primary;
+  transform: scale(1.2);
+  transition: 0.5s ease;
+  border-radius: 2px;
 }

@@ -1,5 +1,9 @@
 $color-primary: #ff5e23;
 $color-text: #d9d9d9;
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
