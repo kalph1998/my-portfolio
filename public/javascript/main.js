@@ -12,6 +12,7 @@ window.addEventListener("scroll", (event) => {
   }
 });
 
+console.log(window.pageYOffset);
 //Animated Navbar
 
 const sections = document.querySelectorAll("section");
