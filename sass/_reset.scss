@@ -1,6 +1,6 @@
 $color-primary: #ff5e23;
 $color-text: #d9d9d9;
-htm {
+html {
   scroll-behavior: smooth;
 }
 
@@ -10,6 +10,9 @@ body {
   font-weight: 400;
   color: $color-text;
   background-color: black;
+  @media (max-width: 600px) {
+    font-size: 55%;
+  }
 }
 
 .primary-color {
@@ -20,4 +23,10 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+.bord {
+  height: 2px;
+  width: 100%;
+  background-color: $color-primary;
+  color: $color-primary;
 }

@@ -7,6 +7,10 @@
     column-gap: 20px;
     row-gap: 50px;
     margin: 3rem 0;
+    @media (max-width: 600px) {
+      grid-template-columns: fit-content(80%);
+      justify-content: center;
+    }
   }
   .card {
     width: 100%;
@@ -28,6 +32,9 @@
     &:hover {
       img {
         filter: blur(2px);
+        @media (max-width: 600px) {
+          filter: none;
+        }
       }
 
       .box-content {
@@ -55,6 +62,9 @@
       width: 100%;
       height: 100%;
       transition: all 0.3s ease-in;
+      @media (max-width: 600px) {
+        display: none;
+      }
       &-text {
         margin-top: 20px;
         font-size: 1.8rem;
@@ -90,45 +100,5 @@
     &:hover {
       color: $color-primary;
     }
-  }
-}
-.resume-section {
-  height: 25vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 0;
-
-  &-image {
-    background-image: url("../../public/css/images/resume.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -2;
-    filter: blur(2px);
-    &::before {
-      content: "";
-      background: rgba(0, 0, 0, 0.705);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  &-heading {
-    margin: 1rem auto;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  &-link {
-    text-transform: capitalize;
-    padding: 0.8rem 1rem;
-    border: solid 2px $color-primary;
   }
 }

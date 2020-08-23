@@ -1,3 +1,5 @@
+// header
+
 let isTransparent = true;
 const nav = document.querySelector("nav");
 
@@ -45,4 +47,12 @@ function navCheck(entries) {
 
 sections.forEach((section) => {
   observer.observe(section);
+});
+
+//preloader section
+
+const load = document.querySelector(".loading");
+
+window.addEventListener("load", (event) => {
+  load.classList.add("loader-finish");
 });

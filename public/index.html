@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -21,10 +22,17 @@
 
     <title>Portfolio</title>
   </head>
-  <body style="height: 2000rem;">
+  <body style="height: 200rem;">
+    <div class="loading">
+      <div class="loading-circle">
+        <div class="loading-box"></div>
+        <h1 class="loading-text">KU</h1>
+      </div>
+    </div>
+
     <section data-index="0" class="hero" id="home">
       <nav class="nav-container">
-        <ul class="flex justify-between nav-list">
+        <ul class="nav-list">
           <li>
             <a href="#home" data-page="hero"
               ><span class="number">01.</span>Home</a
@@ -64,13 +72,37 @@
         <div class="flex justify-center">
           <a href="#projects" class="heading_projects">View projects</a>
         </div>
+        <div class="social-mobile">
+          <a
+            href="https://www.linkedin.com/in/kalph-upadhyay-135831133/"
+            class="my-2 mx-2 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a
+            href="https://github.com/kalph1998"
+            class="my-2 mx-2 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
       </div>
       <div class="arrow"><i class="fas fa-chevron-down fa-2x"></i></div>
-      <div class="social flex flex-col absolute">
-        <a href="#" class="my-2 social-link">
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/kalph-upadhyay-135831133/"
+          class="my-2 social-link"
+          target="_blank"
+        >
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a href="#" class="my-2 social-link">
+        <a
+          href="https://github.com/kalph1998"
+          class="my-2 social-link"
+          target="_blank"
+        >
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>
@@ -155,7 +187,9 @@
                 <h3 class="box-content-text">
                   Trillo Hotel booking
                 </h3>
-                <p class="box-content-para">Website to book online hotels</p>
+                <p class="box-content-para">
+                  Website to book online hotels
+                </p>
                 <ul class="box-content-tech">
                   <li>html</li>
                   <li>css</li>
@@ -183,6 +217,7 @@
           <div class="card">
             <div class="box">
               <img src="./css/thumbnails/yogaMockup.jpg" alt="yoga-landing" />
+
               <div class="box-content">
                 <h3 class="box-content-text">
                   yoga studio
@@ -349,7 +384,9 @@
                 <h3 class="box-content-text">
                   Soundwave
                 </h3>
-                <p class="box-content-para">landing page of music website</p>
+                <p class="box-content-para">
+                  landing page of music website
+                </p>
                 <ul class="box-content-tech">
                   <li>figma</li>
                   <li>html</li>
@@ -382,7 +419,9 @@
                 <h3 class="box-content-text">
                   Pixabay
                 </h3>
-                <p class="box-content-para">image search site like unsplash</p>
+                <p class="box-content-para">
+                  image search site like unsplash
+                </p>
                 <ul class="box-content-tech">
                   <li>html</li>
                   <li>css</li>
@@ -438,6 +477,9 @@
                 </div>
               </div>
             </div>
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
           </div>
         </div>
       </div>
@@ -452,7 +494,11 @@
       </a>
     </div>
     <div class="bord"></div>
+    <section class="about">
+      <h3 class="head">about me</h3>
+    </section>
 
     <script src="./javascript/main.js"></script>
+    <script src="./javascript/glider.min.js"></script>
   </body>
 </html>

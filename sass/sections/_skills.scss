@@ -1,5 +1,5 @@
 .skills {
-  height: 70vh;
+  height: 60vh;
   margin-top: 2rem;
 }
 
@@ -22,6 +22,9 @@
   justify-content: center;
   height: fit-content;
   margin-right: 1rem;
+  @media (max-width: 600px) {
+    padding: 0.7rem;
+  }
   i:hover {
     color: $color-primary;
   }
@@ -30,6 +33,9 @@
   font-size: 1.5rem;
   text-transform: capitalize;
   color: $color-primary;
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
   &:hover {
     color: white;
     cursor: default;
@@ -40,10 +46,4 @@
   display: inline-block;
   max-width: 250px;
   text-align: left;
-}
-.bord {
-  height: 4px;
-  width: 100%;
-  background-color: $color-primary;
-  color: $color-primary;
 }

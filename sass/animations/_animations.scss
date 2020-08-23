@@ -45,3 +45,11 @@
     border-color: transparent;
   }
 }
+@keyframes moveUp-load {
+  from {
+    top: 153%;
+  }
+  to {
+    top: 50%;
+  }
+}
