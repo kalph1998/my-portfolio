@@ -47,14 +47,9 @@
   &-label {
     display: block;
     font-size: 1.5rem;
-    transform: translateY(15px);
-    transition: all 0.5s ease;
+
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-weight: 600;
   }
-}
-.label-focus {
-  transform: translateY(0px);
-  color: $color-primary;
 }
