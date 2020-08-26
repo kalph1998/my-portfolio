@@ -3,20 +3,58 @@
   background: url("../../public/css/images/contact.jpg");
   background-size: cover;
   position: relative;
-  z-index: -2;
-
   &-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.801);
   }
+
   &-form-container {
     width: 50%;
     padding: 6rem;
+    margin: 0 auto;
   }
+}
+.form {
+  margin: 20px auto;
+  width: 500px;
+
+  &-group {
+    margin-bottom: 1rem;
+    position: relative;
+    transition: all 0.25s ease;
+  }
+  &__input {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid gray;
+    display: block;
+    transition: all 0.5s ease;
+    &:focus:invalid {
+      border-bottom: 2px solid $color-primary;
+    }
+    &:focus:valid {
+      border-bottom: 2px solid green;
+    }
+    &:valid {
+      border-bottom: 2px solid green;
+    }
+  }
+  &-label {
+    display: block;
+    font-size: 1.5rem;
+    transform: translateY(15px);
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+}
+.label-focus {
+  transform: translateY(0px);
+  color: $color-primary;
 }

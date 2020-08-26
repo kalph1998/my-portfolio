@@ -1,3 +1,12 @@
+//focus
+
+const input = document.querySelectorAll("input");
+const label = document.querySelector(".form-label");
+
+function myFunction() {
+  label.classList.remove("label-focus");
+}
+
 // header background
 
 let isTransparent = true;
