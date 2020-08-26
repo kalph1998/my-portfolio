@@ -767,7 +767,7 @@ body {
 
 .contact-form-container {
   width: 50%;
-  padding: 6rem;
+  padding: 3rem 6rem;
   margin: 0 auto;
 }
 
@@ -777,14 +777,14 @@ body {
 }
 
 .form-group {
-  margin-bottom: 1rem;
-  position: relative;
+  margin: 1rem auto;
   transition: all 0.25s ease;
 }
 
 .form__input {
   font-size: 1.5rem;
   padding: 1.5rem 0;
+  color: white;
   width: 100%;
   background: transparent;
   outline: none;
@@ -813,6 +813,25 @@ body {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-weight: 600;
+}
+
+.form-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.form-btn {
+  padding: 1rem 2rem;
+  border: 1px solid #ff5e23;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.form-btn:hover {
+  background-color: #ff5e23;
 }
 
 .label-focus {
