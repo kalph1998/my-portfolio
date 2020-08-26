@@ -1,3 +1,16 @@
+// focus
+
+const input = document.querySelectorAll(".form__input");
+
+input.forEach((e) => {
+  e.addEventListener("focus", (event) => {
+    e.previousElementSibling.classList.add("label-focus");
+  });
+  e.addEventListener("blur", (event) => {
+    e.previousElementSibling.classList.remove("label-focus");
+  });
+});
+
 // header background
 
 let isTransparent = true;

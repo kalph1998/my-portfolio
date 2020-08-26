@@ -816,7 +816,7 @@ body {
 }
 
 .label-focus {
-  transform: translateY(0px);
+  transform: translateY(0);
   color: #ff5e23;
 }
 /*# sourceMappingURL=main.css.map */
