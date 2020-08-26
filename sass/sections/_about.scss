@@ -1,0 +1,26 @@
+.about {
+  background-color: rgba(37, 37, 37, 0.603);
+  padding-bottom: 6rem;
+  &-imageContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  &-image {
+    background-image: url("../../public/css/images/profile-pic.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid $color-primary;
+  }
+  &-para {
+    font-size: 1.7rem;
+
+    text-align: center;
+    width: 60%;
+    line-height: 2.5rem;
+    margin: 2rem auto;
+    color: white;
+  }
+}

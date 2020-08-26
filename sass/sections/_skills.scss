@@ -1,14 +1,14 @@
 .skills {
-  height: 60vh;
-  margin-top: 2rem;
+  height: 70vh;
 }
 
 .head {
   text-align: center;
-  margin: 1rem 0;
-  font-size: 2rem;
+  padding: 5rem 0;
+  font-size: 3rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .grid-container {
   display: grid;
@@ -18,6 +18,7 @@
 .icon-container {
   display: flex;
   padding: 1.5rem;
+  font-size: 4rem;
   align-items: center;
   justify-content: center;
   height: fit-content;
@@ -30,11 +31,11 @@
   }
 }
 .icon-name {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-transform: capitalize;
   color: $color-primary;
   @media (max-width: 600px) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   &:hover {
     color: white;

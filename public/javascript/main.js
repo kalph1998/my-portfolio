@@ -1,4 +1,4 @@
-// header
+// header background
 
 let isTransparent = true;
 const nav = document.querySelector("nav");

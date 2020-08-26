@@ -22,7 +22,7 @@
 
     <title>Portfolio</title>
   </head>
-  <body style="height: 200rem;">
+  <body>
     <div class="loading">
       <div class="loading-circle">
         <div class="loading-box"></div>
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <section data-index="0" class="hero" id="home">
+    <section class="hero" id="home">
       <nav class="nav-container">
         <ul class="nav-list">
           <li>
@@ -49,8 +49,13 @@
             >
           </li>
           <li>
-            <a href="#" data-page="about"
+            <a href="#about" data-page="about"
               ><span class="primary-color number">04.</span> About
+            </a>
+          </li>
+          <li>
+            <a href="#contact" data-page="contact"
+              ><span class="primary-color number">05.</span> Contact
             </a>
           </li>
           <div class="bubble"></div>
@@ -115,25 +120,25 @@
           <div class="flex items-center flex-col">
             <div class="flex items-center">
               <div class="icon-container">
-                <i class="fab fa-figma text-5xl"></i>
+                <i class="fab fa-figma"></i>
               </div>
               <div class="name-container"><h3 class="icon-name">figma</h3></div>
             </div>
             <div class="flex items-center">
               <div class="icon-container">
-                <i class="fab fa-html5 text-5xl"></i>
+                <i class="fab fa-html5"></i>
               </div>
               <div class="name-container"><h3 class="icon-name">html</h3></div>
             </div>
             <div class="flex items-center">
               <div class="icon-container">
-                <i class="fab fa-css3-alt text-5xl"></i>
+                <i class="fab fa-css3-alt"></i>
               </div>
               <div class="name-container"><h3 class="icon-name">css</h3></div>
             </div>
             <div class="flex items-center">
               <div class="icon-container">
-                <i class="fab fa-js-square text-5xl"></i>
+                <i class="fab fa-js-square"></i>
               </div>
               <div class="name-container">
                 <h3 class="icon-name">javascrpit</h3>
@@ -143,13 +148,13 @@
           <div class="flex items-center flex-col">
             <div class="flex items-center">
               <div class="icon-container">
-                <i class="fab fa-sass text-5xl"></i>
+                <i class="fab fa-sass"></i>
               </div>
               <div class="name-container"><h3 class="icon-name">Sass</h3></div>
             </div>
             <div class="flex items-center">
               <div class="icon-container">
-                <i class="fab fa-bootstrap text-5xl"></i>
+                <i class="fab fa-bootstrap"></i>
               </div>
               <div class="name-container">
                 <h3 class="icon-name">bootstrap</h3>
@@ -157,7 +162,7 @@
             </div>
             <div class="flex items-center">
               <div class="icon-container">
-                <i class="fab fa-react text-5xl"></i>
+                <i class="fab fa-react"></i>
               </div>
               <div class="name-container">
                 <h3 class="icon-name">reactJs</h3>
@@ -165,7 +170,7 @@
             </div>
             <div class="flex items-center">
               <div class="icon-container">
-                <i class="fab fa-github text-5xl"></i>
+                <i class="fab fa-github"></i>
               </div>
               <div class="name-container">
                 <h3 class="icon-name">github</h3>
@@ -180,185 +185,487 @@
       <h1 class="head">projects</h1>
       <div class="container mx-auto">
         <div class="grid-container-project">
-          <div class="card">
-            <div class="box">
-              <img src="./css/thumbnails/trillo.png" alt="trillo" />
-              <div class="box-content">
-                <h3 class="box-content-text">
-                  Trillo Hotel booking
-                </h3>
-                <p class="box-content-para">
-                  Website to book online hotels
-                </p>
-                <ul class="box-content-tech">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>sass</li>
-                </ul>
-                <div class="box-content-icon">
-                  <a
-                    href="https://github.com/kalph1998/trillo-booking"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a
-                    href="https://kalph1998.github.io/trillo-booking"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img src="./css/thumbnails/trillo.png" alt="trillo" />
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    Trillo Hotel booking
+                  </h3>
+                  <p class="box-contents-para">
+                    Website to book online hotels
+                  </p>
+                  <ul class="box-contents-tech">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>sass</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/trillo-booking"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a
+                      href="https://kalph1998.github.io/trillo-booking"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">Trillo hotel booking</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">website for hotel booking</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>html</li>
+                <li>css</li>
+                <li>Sass</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a
+                  target="_blank"
+                  href="https://github.com/kalph1998/trillo-booking"
+                  >view source</a
+                >
+                <a
+                  target="_blank"
+                  href="https://kalph1998.github.io/trillo-booking"
+                  >visit website</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <div class="box">
-              <img src="./css/thumbnails/yogaMockup.jpg" alt="yoga-landing" />
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img src="./css/thumbnails/yogaMockup.jpg" alt="yoga-landing" />
 
-              <div class="box-content">
-                <h3 class="box-content-text">
-                  yoga studio
-                </h3>
-                <p class="box-content-para">Landing page of yoga classes</p>
-                <ul class="box-content-tech">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>sass</li>
-                  <li>javascrpit</li>
-                </ul>
-                <div class="box-content-icon">
-                  <a
-                    href="https://github.com/kalph1998/yoga-landing"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a
-                    href="https://kalph1998.github.io/yoga-landing/"
-                    class="link"
-                    target="_blank"
-                  >
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    yoga studio
+                  </h3>
+                  <p class="box-contents-para">Landing page of yoga classes</p>
+                  <ul class="box-contents-tech">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>sass</li>
+                    <li>javascrpit</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/yoga-landing"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a
+                      href="https://kalph1998.github.io/yoga-landing/"
+                      class="link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <img src="./css/thumbnails/corporateMockup.jpg" alt="Corporate" />
-              <div class="box-content">
-                <h3 class="box-content-text">
-                  Corporate
-                </h3>
-                <p class="box-content-para">Landing page of a company</p>
-                <ul class="box-content-tech">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascrpit</li>
-                  <li>bootstrap</li>
-                </ul>
-                <div class="box-content-icon">
-                  <a
-                    href="https://github.com/kalph1998/Corporate-web"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a
-                    href="https://kalph1998.github.io/Corporate-web/"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
-                </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">yoga studio</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">Landing page of yoga classes</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                <li>sass</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a
+                  target="_blank"
+                  href="https://github.com/kalph1998/yoga-landing"
+                  >view source</a
+                >
+                <a
+                  target="_blank"
+                  href="https://kalph1998.github.io/yoga-landing/"
+                  >visit website</a
+                >
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="box">
-              <img
-                src="./css/thumbnails/soundwave-advanced.jpg"
-                alt="soundwave-advanced"
-              />
-              <div class="box-content">
-                <h3 class="box-content-text">
-                  Soundwave music
-                </h3>
-                <p class="box-content-para">clone of spotify music</p>
-                <ul class="box-content-tech">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascrpit</li>
-                  <li>ReactJs</li>
-                </ul>
-                <div class="box-content-icon">
-                  <a
-                    href="https://github.com/kalph1998/trillo-booking"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a href="#" class="link">
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img
+                  src="./css/thumbnails/corporateMockup.jpg"
+                  alt="Corporate"
+                />
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    Corporate
+                  </h3>
+                  <p class="box-contents-para">Landing page of a company</p>
+                  <ul class="box-contents-tech">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascrpit</li>
+                    <li>bootstrap</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/Corporate-web"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a
+                      href="https://kalph1998.github.io/Corporate-web/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">Corporate</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">Landing page of a company</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                <li>bootstrap</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a
+                  target="_blank"
+                  href="https://github.com/kalph1998/Corporate-web"
+                  >view source</a
+                >
+                <a
+                  target="_blank"
+                  href="https://kalph1998.github.io/Corporate-web/"
+                  >visit website</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <div class="box">
-              <img src="./css/thumbnails/netflix.png" alt="Netflix" />
-              <div class="box-content">
-                <h3 class="box-content-text">
-                  Netflix clone
-                </h3>
-                <p class="box-content-para">clone website of netflix</p>
-                <ul class="box-content-tech">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascrpit</li>
-                </ul>
-                <div class="box-content-icon">
-                  <a
-                    href="https://github.com/kalph1998/netflix-clone"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a
-                    href="https://kalph1998.github.io/netflix-clone/"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img
+                  src="./css/thumbnails/soundwave-advanced.jpg"
+                  alt="soundwave-advanced"
+                />
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    Soundwave music
+                  </h3>
+                  <p class="box-contents-para">clone of spotify music</p>
+                  <ul class="box-contents-tech">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascrpit</li>
+                    <li>ReactJs</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/trillo-booking"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a href="#" class="link">
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">Soundwave Music</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">Clone of spotify music</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                <li>ReactJs</li>
+                <li>sass</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a
+                  target="_blank"
+                  href="https://github.com/kalph1998/yoga-landing"
+                  >view source</a
+                >
+                <a
+                  target="_blank"
+                  href="https://kalph1998.github.io/yoga-landing/"
+                  >visit website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img src="./css/thumbnails/netflix.png" alt="Netflix" />
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    Netflix clone
+                  </h3>
+                  <p class="box-contents-para">clone website of netflix</p>
+                  <ul class="box-contents-tech">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascrpit</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/netflix-clone"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a
+                      href="https://kalph1998.github.io/netflix-clone/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">Netflix clone</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">Clone of Netflix</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a
+                  target="_blank"
+                  href="https://github.com/kalph1998/netflix-clone"
+                  >view source</a
+                >
+                <a
+                  target="_blank"
+                  href="https://kalph1998.github.io/netflix-clone/"
+                  >visit website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img src="./css/thumbnails/camping.jpg" alt="Camping-site" />
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    Aurora grave
+                  </h3>
+                  <p class="box-contents-para">landing page of camping site</p>
+                  <ul class="box-contents-tech">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>bootstrap</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/camping-site"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a
+                      href="https://kalph1998.github.io/camping-site/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">Aurora Grave</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">landing page of camping site</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>html</li>
+                <li>css</li>
+                <li>bootstrap</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a
+                  target="_blank"
+                  href="https://github.com/kalph1998/camping-site"
+                  >view source</a
+                >
+                <a
+                  target="_blank"
+                  href="https://kalph1998.github.io/camping-site/"
+                  >visit website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img src="./css/thumbnails/soundwave.jpg" alt="SoundWave" />
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    Soundwave
+                  </h3>
+                  <p class="box-contents-para">
+                    landing page of music website
+                  </p>
+                  <ul class="box-contents-tech">
+                    <li>figma</li>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>sass</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/soundwave-basic"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a
+                      href="https://kalph1998.github.io/soundwave-basic/index.html"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">SoundWave</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">landing page of Soundwave music</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>figma</li>
+                <li>html</li>
+                <li>css</li>
+                <li>sass</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a
+                  target="_blank"
+                  href="https://github.com/kalph1998/soundwave-basic"
+                  >view source</a
+                >
+                <a
+                  target="_blank"
+                  href="https://kalph1998.github.io/soundwave-basic/index.html"
+                  >visit website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img src="./css/thumbnails/pixabay.png" alt="Pixabay" />
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    Pixabay
+                  </h3>
+                  <p class="box-contents-para">
+                    image search site like unsplash
+                  </p>
+                  <ul class="box-contents-tech">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>bootstrap</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/camping-site"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a
+                      href="https://kalph1998.github.io/camping-site/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">Pixabay clone</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">image search site like unsplash</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>html</li>
+                <li>javascript</li>
+                <li>css</li>
+                <li>ReactJs</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a target="_blank" href="#">view source</a>
+                <a target="_blank" href="#">visit website</a>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="box">
               <img src="./css/thumbnails/camping.jpg" alt="Camping-site" />
-              <div class="box-content">
-                <h3 class="box-content-text">
+              <div class="box-contents">
+                <h3 class="box-contents-text">
                   Aurora grave
                 </h3>
-                <p class="box-content-para">landing page of camping site</p>
-                <ul class="box-content-tech">
+                <p class="box-contents-para">landing page of camping site</p>
+                <ul class="box-contents-tech">
                   <li>html</li>
                   <li>css</li>
                   <li>bootstrap</li>
                 </ul>
-                <div class="box-content-icon">
+                <div class="box-contents-icon">
                   <a
                     href="https://github.com/kalph1998/camping-site"
                     target="_blank"
@@ -376,110 +683,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <img src="./css/thumbnails/soundwave.jpg" alt="SoundWave" />
-              <div class="box-content">
-                <h3 class="box-content-text">
-                  Soundwave
-                </h3>
-                <p class="box-content-para">
-                  landing page of music website
-                </p>
-                <ul class="box-content-tech">
-                  <li>figma</li>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>sass</li>
-                </ul>
-                <div class="box-content-icon">
-                  <a
-                    href="https://github.com/kalph1998/soundwave-basic"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a
-                    href="https://kalph1998.github.io/soundwave-basic/index.html"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <img src="./css/thumbnails/pixabay.png" alt="Pixabay" />
-              <div class="box-content">
-                <h3 class="box-content-text">
-                  Pixabay
-                </h3>
-                <p class="box-content-para">
-                  image search site like unsplash
-                </p>
-                <ul class="box-content-tech">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>bootstrap</li>
-                </ul>
-                <div class="box-content-icon">
-                  <a
-                    href="https://github.com/kalph1998/camping-site"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a
-                    href="https://kalph1998.github.io/camping-site/"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <img src="./css/thumbnails/camping.jpg" alt="Camping-site" />
-              <div class="box-content">
-                <h3 class="box-content-text">
-                  Aurora grave
-                </h3>
-                <p class="box-content-para">landing page of camping site</p>
-                <ul class="box-content-tech">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>bootstrap</li>
-                </ul>
-                <div class="box-content-icon">
-                  <a
-                    href="https://github.com/kalph1998/camping-site"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a
-                    href="https://kalph1998.github.io/camping-site/"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
           </div>
         </div>
       </div>
@@ -494,11 +697,83 @@
       </a>
     </div>
     <div class="bord"></div>
-    <section class="about">
-      <h3 class="head">about me</h3>
+    <section class="about" id="about">
+      <h3 class="head">a little bit about me</h3>
+      <div class="container mx-auto">
+        <div class="about-imageContainer">
+          <div class="about-image"></div>
+        </div>
+        <div class="about-para">
+          Hey! my name is Kalph Upadhyay and I'm a web devloper
+        </div>
+        <div class="about-para">
+          I have passion for front end devlopment and design. I completed my
+          engineering from parul university in the field of computer science. I
+          aspire toward a carrer that will allow me to channel my creativity
+          through crafting beautiful websites and engaging experiences.
+        </div>
+      </div>
     </section>
+    <section class="contact" id="contact">
+      <div class="contact-overlay"></div>
+      <div class="head">hire me</div>
+      <div class="contact-form-container">
+        <form action=""></form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container mx-auto flex flex-col items-center">
+        <div class="footer-logo">
+          <div class="footer-logo-circle">
+            <div class="footer-name">KU</div>
+          </div>
+        </div>
+        <ul class="footer-nav">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#skills"> skills</a>
+          </li>
+          <li>
+            <a href="#projects"> Projects</a>
+          </li>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+        <div class="footer-social">
+          <a
+            href="https://www.linkedin.com/in/kalph-upadhyay-135831133/"
+            class="my-2 mx-2 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a
+            href="https://github.com/kalph1998"
+            class="my-2 mx-2 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </div>
+        <div class="footer-copyright">
+          Kalph Upadhyay <span class="primary-color">&#169; 2020</span>
+        </div>
+      </div>
+    </footer>
 
     <script src="./javascript/main.js"></script>
-    <script src="./javascript/glider.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript/smoothScroll.js"></script>
   </body>
 </html>

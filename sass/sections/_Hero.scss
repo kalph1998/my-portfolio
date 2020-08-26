@@ -20,6 +20,8 @@
     height: 55px;
     user-select: none;
     transition: all 0.4s;
+
+    top: 0;
     @media (max-width: 600px) {
       display: none;
     }
@@ -27,10 +29,10 @@
     .nav-list {
       display: flex;
       justify-content: space-between;
-      font-size: 1rem;
+      font-size: 1.4rem;
       text-transform: uppercase;
       min-width: 500px;
-      width: 35%;
+      width: 38%;
 
       & li {
         transition: all 0.2s ease;
@@ -73,6 +75,7 @@
       color: inherit;
     }
   }
+
   .heading {
     position: absolute;
     top: 40%;
@@ -84,11 +87,11 @@
     &_typewriter {
       display: flex;
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-transform: capitalize;
       margin: 0.5rem auto;
       @media (max-width: 600px) {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
     }
     &_typewriter h3 {
@@ -99,7 +102,7 @@
       white-space: nowrap;
     }
     &_sub-text {
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-transform: capitalize;
       display: flex;
       justify-content: center;
@@ -107,11 +110,11 @@
       animation: moveInLeft 1s ease;
       user-select: none;
       @media (max-width: 600px) {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
     }
     &_main {
-      font-size: 2rem;
+      font-size: 2.8rem;
       text-transform: uppercase;
       color: white;
       user-select: none;
@@ -120,11 +123,12 @@
       }
     }
     &_projects {
+      margin: 1rem 0;
       border: 1px solid $color-primary;
       padding: 0.5rem 1rem;
       border-radius: 30px;
       text-transform: capitalize;
-      font-size: 0.8rem;
+      font-size: 1.3rem;
       animation: moveUp 1s ease-out;
       transition: all 0.1s;
       &:hover {
