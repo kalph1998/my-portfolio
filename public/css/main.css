@@ -756,6 +756,7 @@ body {
   background: url("../../public/css/images/contact.jpg");
   background-size: cover;
   position: relative;
+  background-position: center;
 }
 
 .contact-overlay {
@@ -771,9 +772,27 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 600px) {
+  .contact-form-container {
+    width: 100%;
+  }
+}
+
 .form {
   margin: 20px auto;
   width: 500px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form {
+    width: 200px;
+  }
 }
 
 .form-group {
