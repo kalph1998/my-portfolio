@@ -7,9 +7,10 @@
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
+      type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -20,7 +21,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Portfolio</title>
+    <title>Portfolio | Kalph upadhyay</title>
   </head>
   <body>
     <div class="loading">
@@ -31,6 +32,45 @@
     </div>
 
     <section class="hero" id="home">
+      <div class="mobile-navi">
+        <div class="hamburger">
+          <span class="burger">&nbsp;</span>
+        </div>
+        <div class="mobile-navi-background">&nbsp;</div>
+        <nav class="mobile-navi-navigation">
+          <ul class="mobile-navi-list">
+            <li class="mobile-navi-item">
+              <a class="mobile-navi-link" href="#home">01. home</a>
+            </li>
+            <li class="mobile-navi-item">
+              <a class="mobile-navi-link" href="#skills">02. skills</a>
+            </li>
+            <li class="mobile-navi-item">
+              <a class="mobile-navi-link" href="#projects">03. projects</a>
+            </li>
+            <li class="mobile-navi-item">
+              <a class="mobile-navi-link" href="#about">04. About me</a>
+            </li>
+            <li class="mobile-navi-item">
+              <a class="mobile-navi-link" href="#contact">05. Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="bottom-nav">
+        <ul class="bottom-nav-container">
+          <li>
+            <a href="#projects"> <i class="fas fa-briefcase"></i>projects</a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fas fa-list"></i>skills</a>
+          </li>
+          <li>
+            <a href="#contact"> <i class="fas fa-phone-alt"></i> hire me</a>
+          </li>
+        </ul>
+      </div>
       <nav class="nav-container">
         <ul class="nav-list">
           <li>
@@ -62,6 +102,7 @@
           <button class="resume-btn">Resume</button>
         </ul>
       </nav>
+
       <div class="overlay"></div>
 
       <div class="heading">
@@ -652,35 +693,60 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="box">
-              <img src="./css/thumbnails/camping.jpg" alt="Camping-site" />
-              <div class="box-contents">
-                <h3 class="box-contents-text">
-                  Aurora grave
-                </h3>
-                <p class="box-contents-para">landing page of camping site</p>
-                <ul class="box-contents-tech">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>bootstrap</li>
-                </ul>
-                <div class="box-contents-icon">
-                  <a
-                    href="https://github.com/kalph1998/camping-site"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fab fa-github fa-3x"></i
-                  ></a>
-                  <a
-                    href="https://kalph1998.github.io/camping-site/"
-                    target="_blank"
-                    class="link"
-                  >
-                    <i class="fas fa-external-link-alt fa-3x"></i
-                  ></a>
+          <div class="card-container">
+            <div class="card">
+              <div class="box">
+                <img src="./css/thumbnails/land-tax.png" alt="Camping-site" />
+                <div class="box-contents">
+                  <h3 class="box-contents-text">
+                    Land tax calculater
+                  </h3>
+                  <p class="box-contents-para">
+                    calculate land tax of rajasthan
+                  </p>
+                  <ul class="box-contents-tech">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                    <li>Reactjs</li>
+                  </ul>
+                  <div class="box-contents-icon">
+                    <a
+                      href="https://github.com/kalph1998/LandTax"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fab fa-github fa-3x"></i
+                    ></a>
+                    <a
+                      href="https://kalph1998.github.io/LandTax/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <i class="fas fa-external-link-alt fa-3x"></i
+                    ></a>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="card-mobile">
+              <h1 class="card-mobile-heading">land tax calculater</h1>
+              <div class="card-mobile-border"></div>
+              <p class="card-mobile-para">calculate land tax of rajasthan</p>
+              <h3 class="card-mobile-tech">technology used</h3>
+              <ul class="card-mobile-technology">
+                <li>html</li>
+                <li>javascript</li>
+                <li>css</li>
+                <li>ReactJs</li>
+              </ul>
+              <div class="card-mobile-cta">
+                <a target="_blank" href="https://github.com/kalph1998/LandTax"
+                  >view source</a
+                >
+                <a target="_blank" href="https://kalph1998.github.io/LandTax/"
+                  >visit website</a
+                >
               </div>
             </div>
           </div>
@@ -743,7 +809,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer" style="display: none;">
+    <footer class="footer">
       <div class="container mx-auto flex flex-col items-center">
         <div class="footer-logo">
           <div class="footer-logo-circle">
@@ -797,5 +863,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="./javascript/smoothScroll.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    <script src="./javascript/firebase.js" defer></script>
   </body>
 </html>

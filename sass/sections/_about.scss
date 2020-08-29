@@ -13,6 +13,10 @@
     height: 200px;
     border-radius: 50%;
     border: 1px solid $color-primary;
+    @media (max-width: 600px) {
+      width: 180px;
+      height: 180px;
+    }
   }
   &-para {
     font-size: 1.7rem;
@@ -21,5 +25,8 @@
     line-height: 2.5rem;
     margin: 2rem auto;
     color: white;
+    @media (max-width: 600px) {
+      width: 90%;
+    }
   }
 }

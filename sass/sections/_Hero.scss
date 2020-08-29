@@ -91,7 +91,7 @@
       text-transform: capitalize;
       margin: 0.5rem auto;
       @media (max-width: 600px) {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
     }
     &_typewriter h3 {
@@ -110,7 +110,7 @@
       animation: moveInLeft 1s ease;
       user-select: none;
       @media (max-width: 600px) {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
     }
     &_main {
@@ -119,7 +119,7 @@
       color: white;
       user-select: none;
       @media (max-width: 600px) {
-        font-size: 1.8rem;
+        font-size: 2.6rem;
       }
     }
     &_projects {
@@ -131,6 +131,9 @@
       font-size: 1.3rem;
       animation: moveUp 1s ease-out;
       transition: all 0.1s;
+      @media (max-width: 600px) {
+        font-size: 1.7rem;
+      }
       &:hover {
         background-color: $color-primary;
         transform: translateY(-3px);
@@ -177,9 +180,146 @@
 .social-mobile {
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
-  font-size: 0.8rem;
+  padding: 2rem 0;
+
+  font-size: 1.5rem;
   @media (min-width: 600px) {
     display: none;
+  }
+}
+.bottom-nav {
+  display: none;
+  @media (max-width: 600px) {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 7vh;
+    background-color: $color-primary;
+    z-index: 100;
+    animation: fade-in 0.2s;
+    &-container {
+      display: flex;
+      justify-content: space-around;
+      font-size: 1.2rem;
+      align-items: center;
+      height: 100%;
+      text-transform: uppercase;
+      & li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & i {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  &-invisible {
+    position: fixed;
+    bottom: -100%;
+    animation: fade-out 2s;
+  }
+}
+.mobile-navi {
+  @media (min-width: 600px) {
+    display: none;
+  }
+  &-background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2.5rem;
+    right: 1.5rem;
+    background-image: radial-gradient($color-primary, $color-primary-dark);
+    z-index: 101;
+
+    transition: all 0.8s;
+  }
+  &-navigation {
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 102;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    width: 0;
+    transition: all 0.4s ease;
+  }
+  &-item {
+    margin: 1rem;
+  }
+  &-link {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &-display {
+    .mobile-navi-background {
+      transform: scale(50);
+    }
+    .mobile-navi-navigation {
+      width: 100%;
+      opacity: 1;
+    }
+    .hamburger .burger {
+      background-color: transparent;
+    }
+    .hamburger .burger::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+    .hamburger .burger::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+.hamburger {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  border-radius: 50%;
+  background-color: $color-primary;
+  z-index: 104;
+  text-align: center;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burger {
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    width: 3rem;
+    height: 2px;
+    background-color: white;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  &::before {
+    top: 1rem;
+  }
+  &::after {
+    bottom: 1rem;
   }
 }

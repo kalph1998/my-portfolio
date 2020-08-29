@@ -53,3 +53,20 @@
     top: 50%;
   }
 }
+
+@keyframes fade-in {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+@keyframes fade-out {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -100%;
+  }
+}

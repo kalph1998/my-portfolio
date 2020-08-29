@@ -1,4 +1,4 @@
-// focus
+// focus contact
 
 const input = document.querySelectorAll(".form__input");
 
@@ -14,7 +14,7 @@ input.forEach((e) => {
 // header background
 
 let isTransparent = true;
-const nav = document.querySelector("nav");
+const nav = document.querySelector(".nav-container");
 
 window.addEventListener("scroll", (event) => {
   if (window.pageYOffset > 70 && isTransparent) {
@@ -67,4 +67,66 @@ const load = document.querySelector(".loading");
 
 window.addEventListener("load", (event) => {
   load.classList.add("loader-finish");
+});
+
+// mobile navbar animation
+const bottom = document.querySelector(".bottom-nav");
+
+let oldScollPosition = 0;
+
+let isScrollingDown = false;
+
+let isHeaderVisible = true;
+
+window.addEventListener("scroll", (event) => {
+  isScrollingDown = oldScollPosition > window.scrollY;
+  oldScollPosition = window.scrollY;
+
+  if (!isScrollingDown && window.scrollY > 200 && isHeaderVisible) {
+    bottom.classList.add("bottom-nav-invisible");
+    isHeaderVisible = false;
+  }
+  if (isScrollingDown && !isHeaderVisible) {
+    bottom.classList.remove("bottom-nav-invisible");
+    isHeaderVisible = true;
+  }
+});
+
+// mobile navigation display
+
+const mobileNavigation = document.querySelector(".mobile-navi");
+const navigationLinks = document.querySelectorAll(".mobile-navi-item");
+const hamburger = document.querySelector(".hamburger");
+
+hamburger.addEventListener("click", (event) => {
+  mobileNavigation.classList.toggle("mobile-navi-display");
+});
+
+navigationLinks.forEach((e) => {
+  e.addEventListener("click", (event) => {
+    mobileNavigation.classList.toggle("mobile-navi-display");
+  });
+});
+
+//form
+
+//adding form
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const details = {
+    name: form.name.value,
+    Email: form.email.value,
+    message: form.Message.value,
+    subject: form.subject.value,
+  };
+  db.collection("contacts")
+    .add(details)
+    .then(function (docRef) {
+      console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function (error) {
+      console.error("Error adding document: ", error);
+    });
 });

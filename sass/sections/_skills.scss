@@ -1,5 +1,8 @@
 .skills {
   height: 70vh;
+  @media (max-width: 600px) {
+    height: 50vh;
+  }
 }
 
 .head {
