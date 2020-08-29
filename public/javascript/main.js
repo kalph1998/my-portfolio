@@ -64,9 +64,11 @@ sections.forEach((section) => {
 //preloader section
 
 const load = document.querySelector(".loading");
+const hero = document.querySelector(".hero");
 
 window.addEventListener("load", (event) => {
   load.classList.add("loader-finish");
+  hero.classList.remove("preload");
 });
 
 // mobile navbar animation

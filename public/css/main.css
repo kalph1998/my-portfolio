@@ -44,7 +44,7 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: -70px -106px;
-  background-image: url("../../public/css/thumbnails/background.jpg");
+  background-image: url("./thumbnails/background.JPG");
   background-repeat: no-repeat;
   position: relative;
 }
@@ -329,6 +329,7 @@ body {
   text-align: center;
   opacity: 0;
   width: 0;
+  visibility: hidden;
   transition: all 0.4s ease;
 }
 
@@ -349,6 +350,7 @@ body {
 .mobile-navi-display .mobile-navi-navigation {
   width: 100%;
   opacity: 1;
+  visibility: visible;
 }
 
 .mobile-navi-display .hamburger .burger {
@@ -794,6 +796,14 @@ body {
   pointer-events: none;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  animation: none !important;
+}
+
 .resume-section {
   height: 25vh;
   position: relative;
@@ -805,7 +815,7 @@ body {
 }
 
 .resume-section-image {
-  background-image: url("../../public/css/thumbnails/resume.jpg");
+  background-image: url("./thumbnails/resume.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -867,7 +877,7 @@ body {
 }
 
 .about-image {
-  background-image: url("../../public/css/thumbnails/profile-pic.jpg");
+  background-image: url("./thumbnails/profile-pic.jpg");
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -973,7 +983,7 @@ body {
 
 .contact {
   height: 100vh;
-  background: url("../../public/css/thumbnails/contact.jpg");
+  background: url("./thumbnails/contact.jpg");
   background-size: cover;
   position: relative;
   background-position: center;
