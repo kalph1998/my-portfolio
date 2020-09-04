@@ -41,6 +41,7 @@ function navCheck(entries) {
   entries.forEach((entry) => {
     const className = entry.target.className;
     const activeAnchor = document.querySelector(`[data-page=${className}]`);
+
     const cords = activeAnchor.getBoundingClientRect();
     const directions = {
       height: cords.height,
@@ -64,9 +65,11 @@ sections.forEach((section) => {
 //preloader section
 
 const load = document.querySelector(".loading");
+const hero = document.querySelector(".preload");
 
 window.addEventListener("load", (event) => {
   load.classList.add("loader-finish");
+  hero.classList.remove("preload");
 });
 
 // mobile navbar animation
