@@ -33,7 +33,7 @@
       text-transform: uppercase;
       min-width: 500px;
       width: 38%;
-
+      align-items: center;
       & li {
         transition: all 0.2s ease;
       }
@@ -54,10 +54,10 @@
         );
         background-size: 250%;
         transition: all 0.3s;
+
         &:hover {
           background-position: 100%;
           transform: scale(1.05);
-          border: none;
         }
       }
     }

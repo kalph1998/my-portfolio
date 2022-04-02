@@ -132,4 +132,5 @@ form.addEventListener("submit", (e) => {
     .catch(function (error) {
       console.error("Error adding document: ", error);
     });
+  form.reset();
 });
